@@ -1,0 +1,175 @@
+
+body {
+    margin: 0;
+    background-color: #343a40;
+}
+
+.main{
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/4.gif);
+    background-size: cover;
+}
+
+.appointments{
+    width: 100%;
+    background-color: #343a40;
+}
+
+.card-deck > .card{
+    max-width: 350px;
+    max-height: 300px;
+    margin-top:-80px;
+}
+
+
+
+.card-deck{
+    display:flex;
+    justify-content: space-around;
+    background-color: gray;
+    padding:15px;
+}
+
+.slideshow{
+    margin-left: auto;
+    margin-right: auto;
+    width:750px;
+    padding:20px;
+}
+
+.info{
+    background-color: #343a40;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+
+.form{
+    grid-column: 2/3;
+    padding: 30px;
+    color: white;
+}
+
+.hours{
+    grid-column: 3/4;
+    padding: 30px;
+    padding-top: auto;
+}
+
+table{
+    width: 100%;
+}
+
+caption{
+    color: white;
+    font-size: 23px;
+}
+
+th{
+    color: white;
+    padding: 15px;
+}
+
+td{
+    background-color: white;
+    border: 6px solid #343a40;
+    color: black;
+    padding: 15px;
+}
+
+#accordion > .card{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact{
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap: 25px;
+    padding: 30px;
+}
+
+.btmlogo > img{
+    width: 300px;
+}
+
+.map-responsive{
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+.map-responsive iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 992px){
+
+    .slideshow{
+        width: 90%;
+    }
+
+    .info{
+        display: flex;
+        justify-content: center;
+    }
+
+    #accordion > .card{
+    width: 90%;
+    }
+
+    .contact{
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .btmlogo{
+        grid-row: 2/3;
+        grid-column: 1/-1;
+    }
+
+  }
+
+
+@media only screen and (max-width: 576px){
+    .main{
+        background-image: none;
+        background-color: white;
+        height: auto;
+    }
+
+    .card-deck{
+        align-items: center;
+    }
+
+    .card-deck > .card{
+        margin-top:0;
+        width:90%;
+    }
+    .info{
+        display: block;
+    }
+
+    .address{
+        grid-row: 1/2;
+        grid-column: 1/-1;
+    }
+
+    .location{
+        grid-row: 2/3;
+        grid-column: 1/-1;
+    }
+
+    .btmlogo{
+        grid-row: 3/4;
+        grid-column: 1/-1;
+    }
+
+  }
