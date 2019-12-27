@@ -1,1 +1,8 @@
 node_modules
+.idea
+license
+gulpfile.js
+package.json
+package-lock.json
+.travis.yml
+readme.md
